@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{4E40957C-3A77-960D-E363-7C10CF79120F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\engine">
+      <UniqueIdentifier>{331BC769-9FD0-3F5F-28C5-393694793663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\event">
+      <UniqueIdentifier>{3F54CC50-2B0C-0E9E-9413-E7F980EAA88E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\event\KeyboardEvents">
+      <UniqueIdentifier>{543F109C-C001-4426-09B2-D2B275B31C04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\event\MouseEvents">
+      <UniqueIdentifier>{8C0424DB-78FE-4C2D-616B-E33D4D04B399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\event\WindowEvents">
+      <UniqueIdentifier>{3B65B9EB-A79C-0183-B0A6-65A61C5D287C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\logger">
+      <UniqueIdentifier>{7D462D7A-E9FB-A56F-72F0-9F46DEA49C73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\memory">
+      <UniqueIdentifier>{16E8D07B-829D-4971-0B92-434877464075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\view">
+      <UniqueIdentifier>{98A164A5-040C-191C-4D4A-CAC1B9F3F670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics">
+      <UniqueIdentifier>{36EF08BC-22BC-63C7-4BD5-516F37019955}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\defines.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\logger\logger.h">
+      <Filter>core\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\memory\memory.h">
+      <Filter>core\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\window\window.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\window\window_properties.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\api_version.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\graphics_system.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\memories_engine.h" />
+    <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\entry.h" />
+    <ClInclude Include="src\core\event\event.h" />
+    <ClInclude Include="src\core\event\event_type.h" />
+    <ClInclude Include="src\core\event\events.h" />
+    <ClInclude Include="src\core\event\subscriber.h" />
+    <ClInclude Include="src\core\engine\memories_engine.h" />
+    <ClInclude Include="src\core\view\view.h" />
+    <ClInclude Include="src\core\view\view_system.h" />
+    <ClInclude Include="src\core\logger\assert.h" />
+    <ClInclude Include="src\core\event\keyboard_events\key_pressed_event.h" />
+    <ClInclude Include="src\core\event\keyboard_events\key_released_event.h" />
+    <ClInclude Include="src\core\event\keyboard_events\key_repeat_event.h" />
+    <ClInclude Include="src\core\event\keyboard_events\keyboard_event.h" />
+    <ClInclude Include="src\core\event\mouse_events\mouse_event.h" />
+    <ClInclude Include="src\core\event\mouse_events\mouse_moved_event.h" />
+    <ClInclude Include="src\core\event\mouse_events\mouse_pressed_event.h" />
+    <ClInclude Include="src\core\event\mouse_events\mouse_released_event.h" />
+    <ClInclude Include="src\core\event\mouse_events\mouse_scroll_event.h" />
+    <ClInclude Include="src\core\event\window_events\window_close_event.h" />
+    <ClInclude Include="src\core\event\window_events\window_content_scale_event.h" />
+    <ClInclude Include="src\core\event\window_events\window_focus_event.h" />
+    <ClInclude Include="src\core\event\window_events\window_framebuffer_event.h" />
+    <ClInclude Include="src\core\event\window_events\window_maximized_event.h" />
+    <ClInclude Include="src\core\event\window_events\window_moved_event.h" />
+    <ClInclude Include="src\core\event\window_events\window_resize_event.h" />
+    <ClInclude Include="src\core\event\converters.h" />
+    <ClInclude Include="src\graphics\shader\shader.h" />
+    <ClInclude Include="src\graphics\renderer\immediate_renderer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\logger\logger.cpp">
+      <Filter>core\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pch.cpp" />
+    <ClCompile Include="src\core\engine\memories_engine.cpp" />
+    <ClCompile Include="src\core\view\view_system.cpp" />
+    <ClCompile Include="src\core\window\window.cpp" />
+  </ItemGroup>
+</Project>
